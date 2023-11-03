@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        form{
+            background-color: brown;
+            padding: 24px;
+            box-shadow: 3px 3px 6px gray;
+            border-radius: 20px;
+
+        }
+        .form-input{
+            margin-bottom: 20px;
+           
+        }
+        .text-white{
+            color: white;
+        }
+        .text-dark{
+            color:black;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            margin-left: 30px;
+            background-color: transparent;
+
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+        h2{
+            font-size: 30px;
+            margin-left: 16px;
+        }
+        .bxs-hide, .bxs-show{
+            position: absolute;
+            right: 10px;
+            top: 3px;
+            cursor: pointer;
+        } 
+        .input{
+            position: relative;
+            
+        }
+        .torch{
+            height: 150px;
+            width: 500px;
+            background-color: blue;
+            filter: invert(1);
+            position: absolute;
+            top: 260px;
+            left: 6px;
+            z-index:1 ;
+            display: none;
+            border-top-right-radius: 47%;
+            border-bottom-right-radius: 47%;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2 class="text-white">Login Form</h2>
+        <input class="text-dark form-input" type="text" placeholder="username">
+        <div class="input">
+            <input class="text-dark form-input" type="password" id="pass" placeholder="enter password">
+            <i class='bx bxs-hide'></i>
+            <i class='bx bxs-show'></i>
+        </div>
+        <button>Login</button>
+    </form>
+    <div class="torch"></div>
+    <script>
+        let hide = document.querySelector(".bxs-hide");
+        let show = document.querySelector(".bxs-show");
+        let pass = document.querySelector("#pass");
+        let torch = document.querySelector(".torch");
+
+        hide.addEventListener("click", function(){
+            document.body.style.backgroundColor = "black";
+            pass.setAttribute("type","text");
+            torch.style.display = "block";
+            show.style.display = "block";
+            hide.style.display = "none";
+
+        })
+
+        show.addEventListener("click", function(){
+            document.body.style.backgroundColor = "white";
+            pass.setAttribute("type","password");
+            torch.style.display = "none";
+            show.style.display = "none";
+            hide.style.display = "block";
+
+        })
+
+    </script>
+
+</body>
+</html>
