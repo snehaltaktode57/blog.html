@@ -67,7 +67,7 @@
            border: none;
            margin-top: 60px;
            font-size: 20px;
-           background-color:rgb(238, 231, 221) ;
+           background-color: rgb(202, 197, 188) ;
         }
         .btn:hover{
             color: blue;
@@ -100,12 +100,12 @@
         }
         .main1{
             display: flex;
+            flex-direction: row;
 
         }
         .main2{
            background-color:  #1d2746;
            width: 100%;
-
            margin-top: 100px;
            position: absolute;
         }
@@ -140,9 +140,192 @@
             margin-top: 70px;
             background-color: white;
             border: 1px solid gray;
+         
+        } 
+        .text{
+            padding: 10px;
+        }
+        @media screen and (max-width:400px) {
+            .btn1{
+            width: 300px;
+            font-size: 15px;
+            height: 40px;
+            border-radius: 50px;
+            border: none;
+            margin-left: 20px;
+            margin-top: 110px;
+            background-color: white;
+            border: 1px solid gray;
           
          
         } 
+        input{
+            outline: 0;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: none; 
+            height: 20px;
+            background-color: none; 
+            font-size: 20px;          
+        } 
+        .card1{
+            width: 245px;
+            height: 240px;
+           padding: 15px;
+            position: absolute;
+            left: 35px;
+            top: 400px;
+        }
+        .card1>h1{
+            font-size: 15px;
+        }
+        .card1>p{
+            font-size: 20px;
+        }
+      
+        .btn{
+           border: none;
+           margin-top: 20px;
+           font-size: 15px;
+           background-color: rgb(202, 197, 188); ;
+        }
+        .card2>img{
+            
+            width: 270px;
+            height: 230px; 
+            position: absolute;
+            bottom: 0px;
+            
+           
+        
+            right: 540px;
+        }
+        .box{
+            margin-top: 100px;
+            margin-left: 30px;
+            width: 250px;
+            height: 380px;
+        }
+        .box>img{
+            width: 250px;
+            height: 200px;
+        }
+        .text>h1{
+            font-size: 20px;
+        }
+        .text>p{
+            font-size: 18px;
+        }
+        .box1{
+           
+            height: 400px;
+            margin-top: 530px;
+            width: 250px;
+            height: 380px;
+            margin-left: 36px;
+        }
+        .box>img{
+            width: 250px;
+            height: 200px;
+        }
+        .text>h1{
+            font-size: 20px;
+        }
+        .text>p{
+            font-size: 18px;
+        }
+        .card{
+            display: flex;
+            flex-direction:row ;
+        }
+        .main1{
+            display: flex;
+            flex-direction: column;
+        }
+        .box1{
+            position:absolute;
+            left: 0px;
+            
+        }
+        .box1>img{
+            width: 250px;
+            height: 200px;
+
+        }
+        .box2{
+            position: absolute;
+            top: 1560px;
+            width: 250px;
+            height: 380px;
+           margin-left: 36px;
+        }
+        .box2>img{
+            width: 250px;
+            height: 200px;
+
+        }
+        .main2{
+            
+          width:390px;
+            height: 230px;
+            margin-top: 270%;
+            position: absolute;
+
+           
+        }
+        .main2>h2{
+            font-size: 20px;
+            position: absolute;
+            left: 20px;
+            top: 0px;
+            text-align: center;
+        }
+        .main2>h3{
+            font-size: 15px;
+            position: absolute;
+            right: 140px;
+            top: 64px;  
+            display: flex;
+            flex-direction: row;
+            width: 240px;
+        }
+       
+        .btn2{
+          position: absolute;
+          width: 200px;
+            font-size: 10px;
+            height: 30px;
+            border: none;
+            left: 25px;
+            padding-left: 10%;
+            margin-top: 50px;
+            margin-left: 3px;
+            background-color: white;
+            border: 1px solid gray;
+         
+        } 
+        .btn2>input{
+            width: 150px;
+            height: 20px;
+            margin-left:0px ;
+            margin-top: 0px;
+            font-size: 15px;
+        }
+        .main2>.image{
+            width: 100px;
+            height: 100px;
+            top: 10px;
+            left: 90px;
+            
+            position: absolute;
+        }
+       
+       
+
+            
+            
+        }
     
         
     </style>
@@ -166,20 +349,26 @@
 
         <div class="box">
             <img src="https://html-template.spider-themes.net/docy/img/blog-grid/blog_grid_post1.jpg" width="350px" height="230px"   alt="">
+            <div class="text">
             <h1>Is Your Store Safe From Magento Killer?</h1>
             <p>The pressure to keep our skills sharp is constant. Mastering new skills may...</p>
+        </div>
 
         </div>
         <div class="box1">
             <img src="https://html-template.spider-themes.net/docy/img/blog-grid/blog_grid_post2.jpg" width="350px" height="230px"   alt="">
+            <div class="text">
             <h1>70 Best Startups You Need to Watch Out for</h1>
             <p>The pressure to keep our skills sharp is constant. Mastering new skills may...</p>
+            </div>
             
         </div>
         <div class="box2">
             <img src="https://html-template.spider-themes.net/docy/img/blog-grid/blog_grid_post3.jpg" width="350px" height="230px"   alt="">
+            <div class="text">
             <h1>Crete Conditional Logic Forms and Publish</h1>
             <p>The pressure to keep our skills sharp is constant. Mastering new skills may...</p>
+        </div>
 
             
         </div>
