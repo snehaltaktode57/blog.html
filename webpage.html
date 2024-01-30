@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            background-image: url(https://html-template.spider-themes.net/docy/img/new/banner_shap1.png);
+            background-repeat: no-repeat;
+            background-color: rgb(54, 54, 141);
+
+        }
+
+        .img2 {
+
+            margin-left: 1350px;
+        }
+
+        .img1 {
+            top: 0%;
+            position: absolute;
+        }
+
+        .logo {
+            position: absolute;
+            top: 80px;
+            left: 300px;
+        }
+
+        nav {
+            display: flex;
+            margin-left: 740px;
+            margin-top: 60px;
+
+        }
+
+        .links {
+            display: flex;
+            gap: 30px;
+            font-size: 30px;
+        }
+
+        li {
+            margin-left: 20px;
+            list-style: none;
+            color: white;
+
+        }
+
+        .btn {
+            left: 74%;
+            position: absolute;
+            top: 10%;
+            width: 120px;
+            height: 45px;
+            font-size: 15px;
+            border-radius: 50px;
+            background-color: rgb(54, 54, 141);
+            border: 2px solid white;
+            color: white;
+
+
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: rgb(54, 54, 141);
+        }
+
+        .text {
+            margin-left: 600px;
+            margin-top: 300px;
+
+        }
+
+        .text>h1 {
+            font-size: 80px;
+            color: white;
+
+        }
+
+        .text>h2 {
+            font-size: 25px;
+            color: white;
+            margin-left: 70px;
+
+        }
+
+        .btn1 {
+            width: 500px;
+            font-size: 20px;
+            height: 60px;
+            border-radius: 50px;
+            border: none;
+
+        }
+
+        input {
+            outline: 0;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            height: 30px;
+            background-color: none;
+        }
+
+        .box {
+            background-color: rgb(66, 66, 169);
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            margin-left: 200px;
+
+        }
+
+        .box1 {
+            background-color: rgb(156, 134, 177);
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            position: absolute;
+            top: 300px;
+            left: 1500px;
+        }
+
+        .box2 {
+            background-color: rgb(89, 89, 232);
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            position: absolute;
+            left: 500px;
+
+        }
+
+        select {
+            width: 120px;
+            height: 40px;
+            font-size: 20px;
+            margin-left: 100px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .link1 {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            font-size: 20px;
+            color: black;
+        }
+
+        .dropdown:hover .link1 {
+            display: block;
+        }
+
+        .list {
+            color: black;
+        }
+
+        @media screen and (max-width:400px) {
+            .body {
+                background-size: 400px;
+            }
+            .img1>img{
+                width: 200px;
+                height: 400px;
+                margin-left: 0px;
+                
+            }
+            .logo{
+                position: absolute;
+                top: 20px;
+                font-size: 40px;
+                left: 70px;
+            }
+            .links{
+                position: absolute;
+                left: 0px;
+                font-size: 15px;
+                color: white;
+                gap: 5px;
+                z-index: 1;
+            }
+            .btn{
+                width: 100px;
+                height:40px;
+                margin-top: 130px;
+                display: none;    
+                
+            }
+            .link1 {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 80px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 4px 8px;
+            z-index: 1;
+            font-size: 12px;
+            color: black;
+        }
+        .text>h1{
+            position: absolute;
+            left: 50px;
+            font-size: 30px;
+            top: 160px;
+        }
+        .text>h2{
+            font-size: 13px;
+            position: absolute;
+            top: 225px;
+            left: 0px;
+        }
+        .btn1{
+            position: absolute;
+            top: 270px;
+            left: 30px;
+            width: 300px;
+            height: 50px;
+            ;
+        }
+        input {
+            outline: 0;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            height: 20px;
+            width: 100px;
+            background-color: none;
+        }
+        select {
+            width: 60px;
+            height: 40px;
+            font-size: 12px;
+            margin-left: 0px;
+            border: none;
+        }
+        .box {
+            background-color: rgb(66, 66, 169);
+            width: 70px;
+            height: 70px;
+            border-radius: 100px;
+            margin-left: 20px;
+            margin-top:30px ;
+            
+
+        }
+        .box1 {
+            background-color: rgb(156, 134, 177);
+            width: 70px;
+            height: 70px;
+            border-radius: 100px;
+            position: absolute;
+            top: 430px;
+            left: 250px;
+            display: none;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 377px;
+            left: 220px;
+        }
+        .img2>img{
+          width: 350px;
+          height: 160px;
+          position: absolute;
+         
+          right: 00px;
+        }
+       
+       
+       
+
+           
+
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav>
+        <ul class="links">
+
+            <div class="dropdown">
+                <li>Home</li>
+                <ul class="link1">
+                    <li class="list">Multi Helpdesk</li>
+                    <li class="list">Classic Helpdesk</li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <li>Docs</li>
+                <ul class="link1">
+                    <li class="list">Elements</li>
+                    <li class="list">Layout</li>
+                    <li class="list">Reference</li>
+                    <li class="list">Content</li>
+                    <li class="list">Other pages</li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <li>Pages</li>
+                <ul class="link1">
+                    <li class="list">Onepage doc</li>
+                    <li class="list">Contact</li>
+                    <li class="list">Typography</li>
+                    <li class="list">404 Error</li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <li>Forum</li>
+                <ul class="link1">
+                    <li class="list">Forums root</li>
+                    <li class="list">Forums Topic</li>
+                    <li class="list">Topic Details</li>
+                    <li class="list">User Profile</li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <li><a href="programblog.html" style="color: white;">Blog</a></li>
+                <ul class="link1">
+                    <li class="list">Blog Grid</li>
+                    <li class="list">Blog Grid Two</li>
+                    <li class="list">Blog List</li>
+                    <li class="list">Blog Details</li>
+                </ul>
+            </div>
+        </ul>
+    </nav>
+    <button class="btn"><b>Free Trail</b></button>
+
+    <div class="img1">
+        <img src="https://html-template.spider-themes.net/docy/img/new/banner_shap4.png" alt="">
+    </div>
+
+    <div class="logo">
+        <img src="https://html-template.spider-themes.net/docy/img/logo-w.png" width="150px" alt="">
+    </div>
+    <div class="text">
+        <h1>How can we help you?</h1>
+        <h2>Search here to get answers to your questions</h2>
+        <button class="btn1"> <i class='bx bx-search'><input type="text" placeholder="Search doc"></i> <select>
+                <option>All Docs </option>
+                <option>Knowledge Base</option>
+                <option>Documentation</option>
+                <option>FAQs</option>
+                <option>Forums</option>
+                <option>Portfolio</option>
+                <option>Products</option>
+            </select> </button>
+    </div>
+
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <div class="img2">
+        <img src="https://html-template.spider-themes.net/docy/img/new/banner_shap2.png" alt="">
+    </div>
+
+
+
+
+
+</body>
+
+</html>
